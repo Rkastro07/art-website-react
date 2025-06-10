@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #222;
+  color: white;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  margin: 0 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page {
+  padding: 2em;
+  text-align: center;
+}
+
+.image-box {
+  margin: 2em auto;
+  max-width: 20em;
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1em;
+}
