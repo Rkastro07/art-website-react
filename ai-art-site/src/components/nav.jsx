@@ -1,13 +1,11 @@
-import { Link } from 'react-router-dom'
-
-export default function Nav() {
+export default function Nav({ currentPage, onNavigate }) {
   return (
     <nav className="nav">
-      <a className="logo">AI Art</a>
+      <a className="logo" onClick={() => onNavigate('home')}>AI Art</a>
       <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/gallery">Gallery</Link>
-        <Link to="/contact">Contact</Link>
+        <button onClick={() => onNavigate('home')} className={currentPage === 'home' ? 'active' : ''}>Home</button>
+        <button onClick={() => onNavigate('gallery')} className={currentPage === 'gallery' ? 'active' : ''}>Gallery</button>
+        <button onClick={() => onNavigate('contact')} className={currentPage === 'contact' ? 'active' : ''}>Contact</button>
       </div>
     </nav>
   )
